@@ -1,0 +1,315 @@
+body,
+html {
+	background-color: white;
+}
+/* SPACES */
+.top-space {
+	height: 180px;
+	width: 100%;
+}
+.top-mobile-space {
+	height: 135px;
+	width: 100%;
+	display: none;
+}
+
+.text-spacer {
+	color: white;
+}
+/* Divider */
+.divider {
+	width: 100%;
+	height: 0.25px;
+	margin-top: 10px;
+	background-color: darkslategrey;
+}
+.dark-divider {
+	width: 100%;
+	height: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: darkslategrey;
+}
+
+/* BOXES */
+
+.content-35-65-box {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.content-35-left {
+	flex: 35%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.content-65-right {
+	flex: 65%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	flex-direction: column;
+}
+
+.content-40-60-box {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.content-40-left {
+	flex: 35%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.content-60-right {
+	flex: 65%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	flex-direction: column;
+}
+
+.content-45-55-box {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.content-45-left {
+	flex: 45%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.content-55-right {
+	flex: 55%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	flex-direction: column;
+}
+
+.content-50-50-box {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.content-50-left,
+.content-50-right {
+	flex: 50%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.content-65-35-box {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.content-65-left {
+	flex: 65%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.content-35-right {
+	flex: 35%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	flex-direction: column;
+}
+
+/* BACKGROUND */
+.dark-background-section {
+	background-color: darkslategrey;
+}
+
+/* Church Name */
+.page-text-james-less,
+.page-text-roman {
+	margin-left: 200px;
+	font: 120px "Bebas Neue", sans-serif;
+	color: #ad0404;
+	line-height: 1;
+}
+.page-text-roman {
+	font: 24px Arial;
+}
+
+/* FONT FAMILY & Page Margin*/
+.section-title,
+.section-title-centered,
+.section-in-dark,
+.section-title-centered-in-dark,
+.section-in-dark-from-right,
+.section-title-inside-box,
+.title,
+.title-centered,
+.title-in-the-dark,
+.title-centered-in-dark,
+.title-inside-box,
+.text,
+.text-centered,
+.text-centered-in-dark,
+.text-in-dark,
+.text-in-dark-from-right,
+.text-inside-box,
+.text-spacer,
+.full-width-text {
+	font-family: Arial;
+	margin-left: 200px;
+	margin-right: 100px;
+}
+
+.section-title-inside-box,
+.section-in-dark-from-right,
+.title-inside-box,
+.text-inside-box {
+	margin-left: 0px;
+}
+
+/* FONT-COLORS */
+.section-title,
+.section-title-centered,
+.section-title-inside-box,
+.title,
+.title-centered,
+.title-inside-box {
+	color: #ad0404;
+}
+.text,
+.text-centered,
+.full-width-text,
+.text-inside-box {
+	color: darkslategrey;
+}
+.text-spacer {
+	color: white;
+}
+
+/* Text Colors in Dark Background */
+.section-in-dark,
+.section-title-centered-in-dark,
+.section-in-dark-from-right {
+	color: rgb(255, 221, 0);
+}
+.title-centered-in-dark,
+.text-in-dark,
+.text-in-dark-from-right {
+	color: gainsboro;
+}
+
+.text-centered-in-dark {
+	color: rgb(141, 140, 140);
+}
+
+/* FONT-SIZE */
+.section-title,
+.section-title-centered,
+.section-in-dark,
+.section-in-dark-from-right,
+.section-title-centered-in-dark,
+.section-title-inside-box {
+	font-size: 40px;
+}
+.title,
+.title-centered,
+.title-centered-in-dark,
+.title-inside-box {
+	font-size: 32px;
+}
+.text,
+.text-centered,
+.text-in-dark,
+.text-centered-in-dark,
+.text-in-dark-from-right,
+.full-width-text,
+.text-inside-box {
+	font-size: 24px;
+}
+
+/* Letter Spacing & Line Height */
+
+.section-title-centered-in-dark,
+.title-centered-in-dark,
+.text,
+.text-centered,
+.text-in-dark,
+.text-in-dark-from-right,
+.full-width-text,
+.text-centered-in-dark,
+.text-inside-box,
+.content-text-in-dark-from-right {
+	letter-spacing: 0.25px;
+	line-height: 1.25;
+}
+
+/* Text Alignment */
+
+.section-in-dark-from-right,
+.text-in-dark-from-right {
+	margin-left: 0px;
+}
+
+.section-title-centered,
+.section-title-centered-in-dark,
+.title-centered,
+.title-centered-in-dark,
+.text-centered,
+.text-centered-in-dark {
+	text-align: center;
+}
+
+/* Images */
+
+.left-aligned-photo {
+	text-align: left;
+	display: block;
+}
+
+.centered-photo-mobile {
+	text-align: center;
+	/* display: block; */
+	display: none;
+}
+
+.right-aligned-photo {
+	text-align: right;
+	padding-right: 100px;
+	display: block;
+}
+.bulletin {
+	display: block;
+}
+.map-desktop {
+	display: block;
+}
+.map-mobile {
+	display: none;
+}
+
+.photo-mobile {
+	text-align: center;
+	display: none;
+}
+.photo-desktop {
+	text-align: center;
+	display: block;
+}

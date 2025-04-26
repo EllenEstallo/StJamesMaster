@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="./pagestyle.css" />
+	<link rel="stylesheet" href="./pagenavbar.css">
+	<link rel="stylesheet" href="./pagenavbar2.css">
+	<link rel="stylesheet" href="./footer.css" />
+	<link rel="stylesheet" href="./pagenavbar.css">
+
+	<title>Ellen Estallo Demo for Saint James The Less Church</title>
+
+</head>
+<style>
+	@media (max-width: 768px) {
+
+		.logo {
+			height: 40px;
+		}
+
+		.top-space,
+		.page-nav-links,
+		.page-text-james-less,
+		.page-text-roman {
+			display: none
+		}
+
+		.page-navbar {
+			height: 60px;
+		}
+
+		.hamburger,
+		.top-mobile-space,
+		.centered-photo-mobile,
+		.church-address {
+			display: block;
+		}
+
+		.page-text-james-less,
+		.section-title,
+		.section-title-centered,
+		.section-title-centered-in-dark,
+		.section-in-dark,
+		.section-in-dark-from-right,
+		.section-title-inside-box,
+		.title,
+		.title-centered,
+		.title-centered-in-dark,
+		.text-in-dark-from-right,
+		.title-inside-box,
+		.text,
+		.text-in-dark,
+		.text-centered,
+		.text-centered-in-dark,
+		.text-inside-box,
+		.full-width-text,
+		.church-address {
+			margin-top: 0px;
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+
+		.content-50-50-box,
+		.content-65-35-box {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+
+		.page-text-james-less {
+			font-size: 60px;
+		}
+
+
+		.section-title,
+		.section-title-centered,
+		.section-in-dark,
+		.section-in-dark-from-right,
+		.section-title-centered-in-dark,
+		.section-title-inside-box {
+			font-size: 26px;
+		}
+
+		.title,
+		.title-centered,
+		.title-centered-in-dark,
+		.title-inside-box {
+			font-size: 22px;
+		}
+
+		.text,
+		.text-centered,
+		.text-centered-in-dark,
+		.text-in-dark,
+		.text-in-dark-from-right,
+		.text-inside-box,
+		.full-width-text {
+			font-size: 18px;
+		}
+
+		.screen,
+		.screen-links,
+		.screen-links li,
+		.screen-links a,
+		.screen-links a:hover,
+		.active {
+			display: block;
+		}
+
+		.left-aligned-photo,
+		.right-aligned-photo {
+			display: none;
+		}
+
+		.centered-photo-mobile {
+			display: block;
+		}
+
+		.funeral-selections {
+			display: none;
+		}
+
+		.church-address {
+			font-size: 14px;
+			text-align: center
+		}
+	}
+</style>
+
+<body>
+
+	<a href="index.html"><img src="./IMAGES/icon1.png" alt="Logo" class="logo" /></a>
+
+	<nav class="page-navbar">
+		<ul class="page-nav-links">
+			<li class="dropdown">
+				<a href="aboutus.html">About Us</a>
+				<div class="dropdown-content">
+					<a href="aboutus.html">Our Parish Mission</a>
+					<a href="aboutus.html#servant-leaders">Our Servant Leaders</a>
+					<a href="aboutus.html#parish-membership">Parish Membership</a>
+					<a href="ccd.html">Religious Education</a>
+
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="masstimes.html">Mass Times</a>
+				<div class="dropdown-content">
+					<!-- <a href="masstimes.html">Our Easter Celebration</a> -->
+					<a href="masstimes.html#special-events">Special Events</a>
+					<a href="masstimes.html#sunday-schedule">Our Sunday Schedule</a>
+					<a href="masstimes.html#prayer-and-reconciliation">Prayer and Reconciliation</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="sacraments.html">Sacraments</a>
+				<div class="dropdown-content">
+					<a href="sacraments.html">Baptism</a>
+					<a href="sacraments.html#marriage">Marriage</a>
+					<a href="sacraments.html#homebound">For the Homebound</a>
+					<a href="sacraments.html#anointing">Anointing of the Sick</a>
+					<a href="sacraments.html#funeral">Funeral Mass</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="contactus.html">Contact Us</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+	<main>
+		<div class="screen" id="screen">
+			<ul class="screen-links">
+				<li><a href="aboutus.html">About Us</a></l>
+				<li><a href="masstimes.html">Mass Times</a></l>
+				<li><a href="sacraments.html">Sacraments</a></li>
+				<li><a href="ccd.html">Our CCD Program</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="top-space"></div>
+		<div class="top-mobile-space"></div>
+
+		<!-- BAPTISM -->
+		<div class="centered-photo-mobile">
+			<img src="./IMAGES/baptism-Pixabay-3899.jpg" style="width: 70%;" />
+			<br><br><br>
+		</div>
+		<div class="section-title">
+			Baptism
+		</div>
+		<br>
+		<div class="content-65-35-box">
+			<div class="content-65-left">
+				<div class="text">
+					"Catechesis aims to bring about in the believer an ever more mature faith in Jesus Christ,
+					a deeper knowledge and love of his message, and a firm commitment to follow him."
+				</div>
+				<br>
+				<div class="text">
+					If you would like to have your child baptized, we ask that you reach out to the office to
+					schedule and to receive more information.
+				</div>
+			</div>
+
+			<div class="content-35-right">
+				<div class="left-aligned-photo">
+					<img src="./IMAGES/baptism-Pixabay-3899.jpg" style="width: 59%;" />
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="text">
+			The chosen godparents, also known as sponsors, are to be practicing Catholics and living examples of a
+			Christ-centered life. They must be over 16 years of age, have received the Sacrament of Baptism and
+			Confirmation, and if married, must be in a valid Catholic marriage.
+		</div>
+		<br>
+		<div class="text">
+			In addition, sponsor certification forms for all godparents are required no later than two weeks
+			before the scheduled baptism.
+		</div>
+		<div id="marriage"></div><br>
+		<br><br><br><br>s
+		<!-- MARRIAGE -->
+		<div class="dark-background-section">
+			<br><br><br>
+			<div class="content-50-50-box">
+
+				<div class="content-50-left">
+					<div class="right-aligned-photo" style="text-align: right; padding-right: 100px" ;>
+						<br><br><br>
+						<img src="./IMAGES/Marriage-iStock-1144716522.jpg" style="width: 50%;" />
+					</div>
+					<div class="centered-photo-mobile">
+						<img src="./IMAGES/Marriage-iStock-1144716522.jpg" style="width: 60%;" />
+					</div>
+				</div>
+				<div class="content-50-right">
+					<div class="section-in-dark-from-right">
+						<br>
+						Marriage
+					</div>
+					<br>
+
+					<div class="text-in-dark-from-right">
+						Congratulations on your engagement!
+					</div>
+					<br><br>
+					<div class="text-in-dark-from-right">
+						We're overjoyed to celebrate with you with on your big day, but even more excited to
+						help you prepare for the rest of the journey beyond your wedding day.
+					</div>
+					<br>
+
+					<div class="text-in-dark-from-right">
+						To start the process, please call the Parish Office for details.
+					</div>
+				</div>
+			</div>
+			<div id="homebound"></div>
+			<br><br><br>
+		</div>
+		<br>
+		<br><br><br><br>
+		<div class="centered-photo-mobile">
+			<img src="./IMAGES/homebound-communion-Pexel-Cottonbro.jpg" style="width: 60%;" />
+			<br>
+		</div>
+		<div class="content-65-35-box">
+			<br>
+			<div class="section-title">
+				Communion for the Homebound
+			</div>
+			<div class="content-65-left">
+				<br>
+				<div class="text">
+					We all are called to care for each other, attending particuarly to those who may be
+					separated from us physically, ensuring that no one is separated from us spiritually.
+				</div>
+				<br>
+				<div class="text">
+					It is through Holy Communion that we bring the true presence of the Lord to the sick, the
+					aged, and the homebound.
+				</div>
+				<br>
+				<div class="text">
+					If you or someone you know needs a visit from a homebound minister, please call the parish
+					office.
+				</div>
+				<br>
+				<div class="text">
+					In addition, masses are celebrated monthly at Monroe Village, Mira Vie Senior Living and
+					Parker Nursing Home.
+				</div>
+			</div>
+
+			<div class="content-35-right">
+				<br>
+				<div class="left-aligned-photo">
+					<img src="./IMAGES/homebound-communion-Pexel-Cottonbro.jpg" style="width: 48%;" />
+				</div>
+			</div>
+
+		</div>
+		<div id="anointing"></div>
+		<br><br><br><br>
+		<!-- ANOINTING -->
+
+
+		<div class="dark-background-section">
+			<br><br><br>
+
+			<div class="centered-photo-mobile">
+				<img src="./IMAGES/anointing-iStock-1323604787.jpg" style="width: 85%;" />
+			</div>
+			<br>
+
+			<div class="section-title-centered-in-dark">
+				Anointing of the Sick
+			</div>
+			<br><br>
+			<div class="content-50-50-box">
+
+				<div class="content-50-left">
+
+					<div class="right-aligned-photo" style="text-align: right; padding-right: 100px" ;>
+						<img src="./IMAGES/anointing-iStock-1323604787.jpg" style="width: 60%;" />
+					</div>
+				</div>
+
+				<div class="content-50-right">
+					<div class="text-in-dark-from-right">
+						It is through the Sacrament of Anointing that Jesus touches us for spiritual
+						healing: that with the Holy Spirit, the we are given the gift of peace and courage
+						to deal with the pain and suffering that accompany serious illness or the frailty of
+						old age.
+					</div>
+					<br>
+
+					<div class="text-in-dark-from-right">
+						There is no need to wait until a person is at the point of death to receive the
+						Sacrament of the Anointing the Sick.
+					</div>
+					<br>
+
+				</div>
+			</div>
+
+			<div class="text-in-dark">
+				If you or a family member is facing a serious illness or is of advanced years, please call the
+				office to arrange for a pastoral visit.
+			</div>
+			<div id="funeral"></div>
+			<br><br><br><br>
+
+		</div>
+		<!-- FUNERAL-->
+		<!-- <div id="funeral">	 -->
+		</div>
+		<br><br><br>
+		<div class="centered-photo-mobile">
+			<img src="./IMAGES/funeral-iStock-Santje09.jpg" style="width: 80%;" />
+		</div>
+		<br>
+		<div class="section-title">
+			Funeral Mass
+		</div>
+		<br>
+		<div class="text">
+			The loss of a loved one is a time of sadness and grief. However, in our faith there is joy in the
+			belief that a funeral represents the passing of the beloved into eternal life -- a realization that
+			brings great comfort at this difficult time.
+		</div>
+		<br>
+
+		<div class="content-65-35-box">
+			<div class="content-65-left">
+				<div class="text">
+					At the time of death, the funeral home is usually called first. Their staff will offer
+					compassionate services and will call the church to schedule a funeral Mass. The funeral
+					mass is where we gather to give praise and thanks for Christ’s victory over sin and death,
+					to commend the deceased to God’s tender mercy and compassion, and to seek strength in this
+					time of need.
+				</div>
+			</div>
+			<div class="content-35-right">
+				<div class="left-aligned-photo">
+					<img src="./IMAGES/funeral-iStock-Santje09.jpg" style="width: 80%;" />
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="text">
+			Beyond merely an expression of grief, the funeral mass is an act of worship.
+		</div>
+		<br>
+		<class="funeral-selections">
+			<div class="text">
+				For liturgical planning purposes, please choose from any of the readings below:
+				<ul>
+					<li class="text-inside-box">Old Testament Readings</li>
+					<br>
+					<ul>
+						<a href="sacraments.html#Ecclesiastes">Ecclesiastes 3:1-15</a><br>
+						<a href="sacraments.html#Isaiah25">Isaiah 25:6a, 7-9</a><br>
+						<a href="sacraments.html#Isaiah43">Isaiah 43:1-5</a><br>
+						<a href="sacraments.html#Proverbs">Proverbs 31:10-31 (The Worthy Wife
+							Proverbs)</a><br>
+						<a href="sacraments.html#WisdomLong">Wisdom 3:1-9 (Long Form)</a><br>
+						<a href="sacraments.html#WisdomShort">Wisdom 3:1-6, 9 (Short Form)</a><br>
+					</ul>
+					<br>
+					<li class="text-inside-box">Old Testament Readings for the Easter Season </li>
+					<br>
+					<ul>
+						<a href="sacraments.html#Acts">Acts 10:34-36, 42-43</a><br>
+						<a href="sacraments.html#Rev14">Rev 14:13</a><br>
+						<a href="sacraments.html#Rev20">Rev 20:11 – 21:1</a><br>
+						<a href="sacraments.html#Rev21">Rev 21:1-5,6-7</a><br>
+					</ul>
+					<br>
+					<li class="text-inside-box">New Testament Readings</li>
+					<br>
+					<ul>
+						<a href="sacraments.html#Corinthians1">1 Corinthians 15:20-23 (Short Form)</a><br>
+						<a href="sacraments.html#John">1 John 3:1-2</a><br>
+						<a href="sacraments.html#Thessalonians">1 Thessalonians 4:13-18</a><br>
+						<a href="sacraments.html#Corinthians2">2 Corinthians 4:14-5:1</a><br>
+						<a href="sacraments.html#Romans8">Romans 8:31b-35, 37-39</a><br>
+						<a href="sacraments.html#Romans5">Romans 5:5-11</a><br>
+						<a href="sacraments.html#Romans6">Romans 6:3-9</a><br>
+						<a href="sacraments.html#Romans14">Romans 14:7-9, 10b – 12</a><br>
+						<ul>
+
+						</ul>
+			</div>
+			<br>
+			<div class="bulletin">
+				<div class="text">Finally, click
+					<a href="./pdf/universalPrayers.pdf">here</a> for the Universal Prayers and <a
+						href="./pdf/hymnSuggestions.pdf">here</a> for suggested appropriate hymns for the
+					funeral liturgy.
+				</div>
+			</div>
+
+
+			<!-- OLD TESTAMENT -->
+			<!-- 1 Eccesliastes -->
+			<div id="Ecclesiastes"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div>
+			<br>
+			<div class="text">Ecclesiastes 3:1-15
+				<br><br>
+				A reading from the book of Ecclesiastes
+				<br><br>
+				There is an appointed time for everything,<br>
+				and a time for every affair under the heavens.<br><br>
+				A time to give birth, and a time to die;<br>
+				a time to plant, and a time to uproot the plant.<br><br>
+				A time to kill, and a time to heal;<br>
+				a time to tear down, and a time to build.<br><br>
+				A time to weep, and a time to laugh;<br>
+				a time to mourn, and a time to dance.<br><br>
+				A time to scatter stones, and a time to gather them;<br>
+				a time to embrace, and a time to be far from embraces.<br><br>
+				A time to seek, and a time to lose;<br>
+				a time to keep, and a time to cast away.<br><br>
+				A time to rend, and a time to sew;<br>
+				a time to be silent, and a time to speak.<br><br>
+				A time to love, and a time to hate;<br>
+				a time of war, and a time of peace.<br><br>
+
+				What profit have workers from their toil?<br><br>
+				I have seen the business that God has given to mortals to be busied about.<br><br>
+				God has made everything appropriate to its time, but has put the timeless into their hearts so
+				they cannot find out, from beginning to end, the work which God has done.<br><br>
+				I recognized that there is nothing better than to rejoice and to do well during life.<br><br>
+				Moreover, that all can eat and drink and enjoy the good of all their toil—this is a gift of
+				God.<br><br>
+				I recognized that whatever God does will endure forever; there is no adding to it, or taking
+				from it. Thus has God done that he may be revered.<br><br>
+				What now is has already been; what is to be, already is: God retrieves what has gone by.<br><br>
+				The word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+			</div>
+
+			<!-- 2 Isaiah 25 -->
+			<div id="Isaiah25"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Isaiah 25:6a, 7-9
+				<br><br>
+				A reading from the book of the prophet Isaiah
+				<br><br>
+				On this mountain the Lord of hosts
+				will provide for all peoples.<br>
+				On this mountain he will destroy
+				the veil that veils all peoples,<br><br>
+				The web that is woven over all nations;
+				he will destroy death forever. <br><br>
+				The Lord God will wipe away the tears from all faces;
+				the reproach of his people he will remove
+				from the whole earth, for the Lord has spoken. <br><br>
+				On that day it will be said:
+				"Behold our God, to whom we looked to save us!
+				This is the Lord for whom we looked;
+				let us rejoice and be glad that he has saved us!"<br><br>
+				The word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!-- 3 Isaiah 43 -->
+			<div id="Isaiah43"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Isaiah 43:1-5
+				<br><br>
+				A reading from the book of the prophet Isaiah
+				<br><br>
+				The Lord who created you says:<br><br>
+				Do not be afraid, I will save you;<br>
+				I have called you by your name and you are mine.<br><br>
+				When you pass through deep waters, I will be with you and your troubles will not be able to
+				overcome you. <br><br>
+				Even if you walk through fire, you will not be burned;
+				even though you endure hard trials,
+				they will not be victorious over you. <br><br>
+				For I am your God, the God who saves you from harm.<br><br>
+				You are precious to me and I love you,
+				so do not be afraid for I am with you.<br>
+				From the distant West and the farthest East,
+				I will bring you home.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+			<br><br><br><br>
+
+			<!-- 4 Proverbs -->
+			<div id="Proverbs"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Proverbs 31:10-31 (The Worthy Wife Proverbs)
+				<br><br>
+				A reading from the book of the prophet Proverbs
+				<br><br>
+				When one finds a worthy wife, her value is far beyond pearls. Her husband, entrusting his heart
+				to her, has an unfailing prize. She brings him good, and not evil, all the days of her life. She
+				rises while it is still night, and distributes food to her household.<br><br>
+				She enjoys the success of her dealings; at night her lamp is undimmed. She fears not the snow
+				for her household; all her charges are doubly clothed.<br>
+				<br>She is clothed in strength and dignity, and she laughs at the days to come. <br>
+				She opens her mouth in wisdom, and on her tongue is kindly counsel. She watches the conduct of
+				her household, and eats not her food in idleness. Her children rise up and praise her; her
+				husband, too, extols her.<br><br>
+				Many are the women of proven worth, but you have excelled them all. Charm is deceptive and
+				beauty fleeting; the woman who fears the Lord is to be praised. Give her a reward of her labors,
+				and let her works praise her at the city gates.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!-- 5 WisdomLong -->
+			<div id="WisdomLong"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Wisdom 3:1-9 Long Form
+				<br><br>
+				A reading from the book of Wisdom
+				<br><br>
+
+				The souls of the just are in the hand of God,
+				and no torment shall touch them.<br><br>
+				They seemed, in the view of the foolish, to be dead;
+				and their passing away was thought an affliction
+				and their going forth from us, utter destruction.<br>
+				But they are in peace.<br><br>
+				For if before men, indeed, they be punished,
+				yet is their hope full of immortality;
+				chastised a little, they shall be greatly blessed,
+				because God tried them
+				and found them worthy of himself.<br><br>
+				As gold in the furnace, he proved them,
+				and as sacrificial offerings he took them to himself.<br><br>
+				In the time of their visitation they shall shine,
+				and shall dart about as sparks through stubble;
+				They shall judge nations and rule over peoples,
+				and the LORD shall be their King forever.<br><br>
+				Those who trust in him shall understand truth,
+				and the faithful shall abide with him in love:
+				because grace and mercy are with his holy ones,
+				and his care is with his elect.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!-- 6 WisdomShort -->
+			<div id="WisdomShort"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Wisdom 3:1-6, 9 Short Form
+				<br><br>
+				A reading from the book of Wisdom
+				<br><br>
+				The souls of the just are in the hand of God,
+				and no torment shall touch them.<br><br>
+				They seemed, in the view of the foolish, to be dead;
+				and their passing away was thought an affliction
+				and their going forth from us, utter destruction.<br>
+				But they are in peace.<br><br>
+				For if before men, indeed, they be punished,
+				yet is their hope full of immortality;
+				chastised a little, they shall be greatly blessed,
+				because God tried them
+				and found them worthy of himself.<br><br>
+				As gold in the furnace, he proved them,
+				and as sacrificial offerings he took them to himself.
+				<br><br>Those who trust in him shall understand truth,
+				and the faithful shall abide with him in love:
+				because grace and mercy are with his holy ones,
+				and his care is with his elect.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!-- OLD TESTAMENT for EASTER -->
+			<!-- 7 Acts -->
+
+			<div id="Acts"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Acts 10:34-36, 42-43 (Easter Season Only)
+				<br><br>
+				A reading from the Acts of the Apostles
+				<br><br>
+				Peter proceeded to address the people in these words:<br><br>
+				“In truth, I see that God shows no partiality. Rather, in every
+				nation whoever fears him and acts uprightly is acceptable to
+				him. <br><br>You know the word that he sent to the Israelites as he
+				proclaimed peace through Jesus Christ, who is Lord of all.<br><br>
+				He commissioned us to preach to the people and testify
+				that he is the one appointed by God as judge of the living and the dead. <br><br> To him all the
+				prophets bear witness, that everyone who believes in him will receive forgiveness of sins
+				through his name.”
+
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!-- 8 Rev14 -->
+			<div id="Rev14"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Rev 14:13 (Easter Season Only)
+				<br><br>
+				A reading from the book of Revelation
+				<br><br>
+				I heard a voice from heaven say, “Write this: Blessed are the
+				dead who die in the Lord from now on.”
+				<br><br>“Yes,” said the Spirit,
+				“let them find rest from their labors, for their works accompany
+				them.”
+				<br><br>
+				The Word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!-- 9 Rev20 -->
+			<div id="Rev20"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Rev 20:11 – 21:1 (Easter Season Only)
+				<br><br>
+				A reading from the book of Revelation
+				<br><br>
+				I saw a large white throne and the one who was sitting on it.
+				The earth and the sky fled from his presence and there was no
+				place for them. <br><br>I saw the dead, the great and the lowly, standing
+				before the throne, and scrolls were opened. Then another
+				scroll was opened, the book of life. <br><br> The dead were judged
+				according to their deeds, by what was written in the scrolls. The
+				sea gave up its dead; then Death and Hades gave up their dead.
+				All the dead were judged according to their deeds. <br><br> Then
+				Death and Hades were thrown into the pool of fire. (This pool
+				of fire is the second death.) Anyone whose name was not
+				found written in the book of life was thrown into the pool of fire.<br><br>
+				Then I saw a new heaven and a new earth. The former heaven
+				and the former earth had passed away, and the sea was no
+				more.
+
+				<br><br>
+				The Word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!-- 10 Rev21 -->
+			<div id="Rev21"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Rev 21:1-5,6-7 (Easter Season Only)
+				<br><br>
+				A reading from the book of Revelation
+				<br><br>
+				I saw a new heaven and a new earth. <br>The former heaven and the former earth had passed away,
+				and the sea no more. <br><br>I also saw the holy city, a new Jerusalem, coming down out of
+				heaven from God, prepared as a bride adorned for her husband. <br><br>I heard a loud voice from
+				the throne saying, <br>“Behold, God’s dwelling is with the human race. <br> He will dwell with
+				them and they will be his people, and God himself will always be with them as their God. <br>He
+				will wipe every tear from their eyes, and there shall be no more death or mourning, wailing or
+				pain, for the old order has passed away.” <br><br>
+				The One who sat on the throne said, <br>“Behold, I make all things new! <br>I am the Alpha and
+				the Omega, the beginning and the end. <br>To the thirsty I will give a gift from the spring of
+				life-giving water.<br> The victor will inherit these gifts, and I shall be his God and he will
+				be my son.”
+
+
+				<br><br>
+				The Word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!-- NEW TESTAMENT -->
+			<!-- A.  Corinthians 1 -->
+			<div id="Corinthians1"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">1 Corinthians 15:20-23 (Short Form)
+				<br><br>
+				A reading from the first Letter of Saint Paul to the Corinthians
+				<br><br>
+				Christ has been raised from the dead,<br>
+				the first fruits of those who have fallen asleep.<br><br>
+				For since death came through a human being, <br>
+				the resurrection of the dead came also through a human being.<br><br>
+				For just as in Adam all die, so too in Christ shall all be brought to life,<br>
+				but each one in proper order:
+				Christ the first fruits; then, at his coming, those who belong to Christ.
+				<br><br>
+				The Word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!--B .  1 John 3:1-2 -->
+			<div id="John"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">1 John 3:1-2
+				<br><br>
+				A reading from the first Letter of Saint John
+				<br><br>
+				See what love the Father has bestowed on us
+				that we may be called the children of God.<br>
+				Yet so we are. <br><br>
+				The reason the world does not know
+				us is that it did not know him.<br><br>
+				Beloved, we are God's children now; what we shall be has
+				not yet been revealed. We do know that when it is revealed we shall be
+				like him, for we shall see him as he is.<br>
+				<br><br>
+				The Word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!--C .  1 Thessalonians 4:13-18 -->
+			<div id="Thessalonians"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">1 Thessalonians 4:13-18
+				<br><br>
+				A reading from the first Letter of Saint Paul to the Thessalonians
+				<br><br>
+				We do not want you to be unaware, brothers and sisters,<br>
+				about those who have fallen asleep so that you may not grieve<br>
+				like the rest, who have no hope.<br><br>
+				For if we believe that Jesus died and rose, so too will God, through Jesus, <br>
+				bring with him those who have fallen asleep.<br><br>
+				Indeed, we tell you this, on the word of the Lord, that we <br>
+				who are alive, who are left until the coming of the Lord,<br>
+				will surely not precede those who have fallen asleep.<br><br>
+				For the Lord himself, with a word of command, with the<br>
+				voice of an archangel and with the trumpet of God,<br>
+				will come down from heaven, and the dead in Christ will rise first.<br><br>
+				Then we who are alive, who are left, will be caught up together with them <br>
+				in the clouds to meet the Lord in the air.<br><br>
+				Thus we shall always be with the Lord. <br>
+				Therefore, console one another with these words.
+				<br><br>
+				The Word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!--D .  2 Corinthians 4:14-5:1 -->
+			<div id="Corinthians2"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">2 Corinthians 4:14-5:1
+				<br><br>
+				A reading from the second Letter of Saint Paul to the Corinthians
+				<br><br>
+				We know that the one who raised the Lord Jesus<br>
+				will raise us also with Jesus and place us with you<br>
+				in his presence.<br><br>
+				Everything indeed is for you, <br>
+				so that the grace bestowed in abundance on more and more people may cause the thanksgiving to
+				overflow<br>
+				for the glory of God. <br><br>
+				Therefore, we are not discouraged;<br>
+				rather, although our outer self is wasting away, <br>
+				our inner self is being renewed day by day. <br><br>
+				For this momentary light affliction is producing for us an eternal weight of glory beyond all
+				comparison,<br>
+				as we look not to what is seen but to what is unseen; <br>
+				for what is seen is transitory, but what is unseen is eternal. <br><br>
+				For we know that if our earthly dwelling, a tent, <br>
+				should be destroyed, we have a building from God,<br>
+				a dwelling not made with hands, eternal in heaven.
+				<br><br>
+				The Word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!--E .  Romans 8:31b-35, 37-39 -->
+			<div id="Romans8"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Romans 8:31b-35, 37-39
+				<br><br>
+				A reading from the Letter of Saint Paul to the Romans
+				<br><br>
+				If God is for us, who can be against us? <br><br>
+				He did not spare
+				his own Son but handed him over for us all, <br>
+				how will he not also give us everything else along with him?<br><br>
+				Who will bring a charge against God's chosen ones?<br>
+				It is God who acquits us. Who will condemn? <br>
+				It is Christ Jesus who died, rather, was raised, who also is
+				at the right hand of God, who indeed intercedes for us. <br><br>
+				What will separate us from the love of Christ? <br>
+				Will anguish, or distress, or persecution, or famine, or
+				nakedness, or peril, or the sword?<br><br>
+				No, in all these things we conquer overwhelmingly
+				through him who loved us. <br><br>
+				For I am convinced that neither death, <br>nor life, nor angels,
+				nor principalities, <br> nor present things, nor
+				future things, <br> nor powers, nor height, nor depth, nor any
+				other creature <br>will be able to separate us from the love of
+				God in Christ Jesus our Lord.<br><br>
+				The Word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!--F .  Romans 5:5-11 -->
+			<div id="Romans5"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Romans 5:5-11
+				<br><br>
+				A reading from the Letter of Saint Paul to the Romans
+				<br><br>
+				Hope does not disappoint,<br>
+				because the love of God has been poured out into
+				our hearts through the holy Spirit that has been given to us.<br><br>
+				For Christ, while we were still helpless, <br>yet died at the
+				appointed time for the ungodly.<br> <br>
+				Indeed, only with difficulty does one die for a just person,<br>
+				though perhaps for a good person one might even find
+				courage to die.<br><br>
+				But God proves his love for us in that while we were still
+				sinners Christ died for us.<br><br>
+				How much more then, since we are now justified by his
+				blood, <br>will we be saved through him from the wrath.<br><br>
+				Indeed, if, while we were enemies,<br> we were reconciled to
+				God through the death of his Son,
+				how much more, once reconciled,
+				will we be saved by his life.<br><br>
+				Not only that, but we also boast of God through our
+				Lord Jesus Christ, <br>through whom we have now received reconciliation.<br>
+				<br><br>
+				The Word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!--G.  Romans 6:3-9 -->
+			<div id="Romans6"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Romans 6:3-9
+				<br><br>
+				A reading from the Letter of Saint Paul to the Romans
+				<br><br>
+				Are you unaware that we who were baptized into Christ
+				Jesus were baptized into his death?<br><br>
+				We were indeed buried with him through baptism into
+				death, so that, just as Christ was raised from the dead
+				by the glory of the Father, we too might live in newness of life.<br><br>
+				For if we have grown into union with him through a death like his,
+				we shall also be united with him in the resurrection.
+				We know that our old self was crucified with him, so that
+				our sinful body might be done away with, that we might
+				no longer be in slavery to sin.
+				For a dead person has been absolved from sin. <br><br>
+				If, then, we have died with Christ, we believe that we
+				shall also live with him. We know that Christ, raised from
+				the dead, dies no more; death no longer has power over him.
+				<br><br>
+				The Word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			<!--H.  Romans 14:7-9, 10b – 12-->
+			<div id="Romans14"></div>
+			<br><br><br><br><br><br>
+			<div class="dark-divider"></div><br>
+			<div class="text">Romans 14:7-9, 10b – 12
+				<br><br>
+				A reading from the Letter of Saint Paul to the Romans
+				<br><br>
+				None of us lives for oneself, and no one dies for oneself.
+				For if we live, we live for the Lord, and if we die, we die for the Lord;
+				so then, whether we live or die, we are the Lord's.<br><br>
+				For this is why Christ died and came to life, that he might
+				be Lord of both the dead and the living.
+				For we shall all stand before the judgment seat of God;
+				for it is written: <br><br>
+
+				''As I live, says the Lord, every knee shall bend before me,
+				and every tongue shall give praise to God. "<br><br>
+
+				So then each of us shall give an account of himself to God.
+				<br><br>
+				The Word of the Lord.
+				<br><br>
+				<a href="sacraments.html#funeral">Back</a>
+				<br>
+			</div>
+
+			</div>
+
+			<br><br><br><br><br>
+			<div class="church-address">
+				36 Lincoln Ave., Jamesburg, NJ | Tel. 732-521-0100
+			</div>
+			<br><br>
+	</main>
+
+</body>
+<script>
+
+
+	hamburgerCharacter = "&#9776;"
+	crossCharacter = "&#10799;"
+
+	function toggleMenu() {
+		const screen = document.getElementById("screen");
+		const hamburger = document.getElementById("hamburger");
+
+		screen.classList.toggle("active");
+		hamburger.innerHTML = screen.classList.contains("active")
+			? crossCharacter : hamburgerCharacter;
+	}
+
+
+</script>
+
+</html>

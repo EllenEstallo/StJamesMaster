@@ -1,0 +1,100 @@
+/* styles.css */
+body {
+	font-family: Arial, sans-serif;
+	/* background-image: url("church2 copy.jpg"); */
+	background-image: url("./IMAGES/church-smaller.png");
+	background-size: cover; /* Cover the entire background */
+	background-position: top center; /* Align the image to the top center */
+	margin: 0;
+}
+
+.original-logo {
+	position: fixed;
+	margin-left: 7%;
+	margin-top: 15px;
+	height: 80px;
+}
+.logo {
+	position: fixed;
+	margin-left: 7%;
+	margin-top: 30px;
+	height: 60px;
+}
+
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	background-color: transparent;
+	margin-top: 20px;
+}
+
+.nav-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.nav-links li {
+	position: relative;
+}
+/* margin to the last link in nav */
+.nav-links li:last-child {
+	margin-right: 50px;
+}
+.nav-links a {
+	display: block;
+	padding: 14px 20px;
+	font: 22px "Arial";
+	letter-spacing: 0.25px;
+	color: #f9f7e3;
+	text-decoration: none;
+	position: relative; /* relative for the pseudo-element */
+}
+
+/* .nav-links a::after {
+	content: ""; /* Create an empty content for the pseudo-element *
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #f9f7e3;
+	/* Color of the underline *
+	position: absolute;
+	left: 0; /* Align to left *
+	bottom: -0.5px; /* Position it close to the bottom of the link *
+	visibility: hidden; /* Initially hide it *
+} */
+
+/* .nav-links a:hover::after {
+	visibility: visible;
+} */
+/* Show underline on hover */
+
+/* Dropdown content styles */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f7e3;
+	min-width: 230px;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content a {
+	display: block;
+	padding: 8px 16px;
+	font: 16px "Arial";
+	letter-spacing: 0.25px;
+	color: darkslategrey;
+}
+
+.dropdown-content a:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown > a {
+	position: relative; /* Allow dropdown to position correctly */
+}

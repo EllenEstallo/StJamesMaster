@@ -1,0 +1,28 @@
+body,
+html {
+	min-height: 100vh;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	overflow-x: hidden;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.background-image {
+	background-image: url("church2.jpg");
+	/* background-color: darkslategrey; */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	position: absolute;
+	inset: 0; /* to stretch to all 4 edges */
+	z-index: -1;
+}
+
+main {
+	flex: 1;
+}

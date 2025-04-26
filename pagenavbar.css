@@ -1,0 +1,87 @@
+/* styles.css */
+body {
+	font-family: Arial, sans-serif;
+}
+
+.logo {
+	position: fixed;
+	margin-left: 7%;
+	margin-top: 25px;
+	height: 50px;
+}
+
+.page-navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	background-color: darkslategrey;
+	padding: 20px 0;
+	z-index: 10;
+}
+
+.page-nav-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex; /* links horizontal */
+}
+
+.page-nav-links li {
+	position: relative;
+}
+
+.page-nav-links li:last-child {
+	margin-right: 50px;
+}
+.page-nav-links a {
+	display: block;
+	padding: 14px 20px;
+	font: 22px "Arial";
+	letter-spacing: 0.25px;
+	color: #f9f7e3;
+	text-decoration: none;
+	position: relative; /* relative for the pseudo-element */
+}
+
+/* .page-nav-links a::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	left: 0;
+	bottom: -0.5px;
+	visibility: hidden;
+}
+
+.page-nav-links a:hover::after {
+	visibility: visible;
+} */
+
+/* Dropdown content styles */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 221px;
+	z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content a {
+	display: block;
+	padding: 8px 16px;
+	font: 16px "Arial";
+	letter-spacing: 0.25px;
+	color: darkslategrey;
+}
+
+.dropdown-content a:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}

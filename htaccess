@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?stjamesthelessrc\.org$ [NC]
+RewriteRule ^(.*)$ https://stjamesthelessrc.org/$1 [L,R=301]
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www\.)?stjamesthelessrc\.org$ [NC]
+RewriteRule .* - [E=UPGRADE]
+    <IfModule mod_headers.c>
+        Header always set Content-Security-Policy "upgrade-insecure-requests;" env=UPGRADE
+    </IfModule>
+</IfModule>
+Redirect 301 /bulletins/ /bulletin.pdf
+Redirect 301 /mass-schedule/ /masstimes.html
+Redirect 301 /contact-us/ /contactus.html
+Redirect 301 /lazarus-ministry/ /sacraments.html
+Redirect 301 /sacraments/ /sacraments.html
+Redirect 301 /give-online/ /
+Redirect 301 /become-a-parishione/ /aboutus.html
+Redirect 301 /religious-education/ /ccd.html
+Redirect 301 /wp-content/uploads/2024/03/2024mar17-7.pdf /
+Redirect 301 /wp-content/uploads/2025/03/2025march30_parish634.pdf /
+Redirect 301 /memorials/ /sacraments.html
+Redirect 301 /wp-content/uploads/2025/03/2025march23_parish634-1.pdf /
+Redirect 301 /ministries/ /

@@ -1,0 +1,55 @@
+.logo {
+	position: fixed;
+	margin-left: 7%;
+	margin-top: 20px;
+	height: 60px;
+	z-index: 10002;
+}
+
+.hamburger {
+	position: fixed;
+	top: 7px;
+	right: 40px;
+	font-size: 50px;
+	color: rgb(255, 221, 0);
+	cursor: pointer;
+	display: none;
+	z-index: 500;
+}
+
+.screen {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 70%;
+	height: 100vh;
+	padding: 0;
+	background-color: rgba(47, 79, 79, 0.853);
+	display: flex;
+	flex-direction: column;
+	transition: left 1.5s ease;
+	display: none;
+}
+
+.screen-links {
+	margin-top: 230px;
+	list-style-type: none;
+}
+
+.screen-links li {
+	margin-bottom: 28px;
+}
+
+.screen-links a {
+	text-decoration: none;
+	font: 24px Arial;
+	/* color: #87f9f9; */
+	color: rgb(255, 221, 0);
+}
+
+.screen-links a:hover {
+	text-decoration: underline;
+}
+.active {
+	left: 0;
+}

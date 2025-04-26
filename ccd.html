@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
+			rel="stylesheet"/>
+		<link rel="stylesheet" href="./pagenavbar.css" />
+		<link rel="stylesheet" href="./pagenavbar2.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./pagestyle.css" />
+		<link rel="stylesheet" href="./footer.css" />
+		<!-- <link rel="stylesheet" href="./pagenavbar.css"> -->
+		
+		<title>Ellen Estallo Demo for Saint James The Less Church</title>
+	
+	</head>
+	<style>
+
+		@media (max-width: 768px) {
+
+			.logo {height: 40px;}
+    
+		 	.top-space, .page-nav-links, .page-text-james-less, .page-text-roman {display: none;}
+			 
+			.content-45-left {display: none;}
+			.page-navbar {height: 60px;}
+
+			.hamburger, .top-mobile-space, .church-address
+			{display: block;}
+		
+			.page-text-james-less,
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark, 
+			.section-in-dark-from-right,
+			.section-title-inside-box, 
+			.title,
+			.title-centered,
+			.title-centered-in-dark, 
+			.text-in-dark-from-right,
+			.title-inside-box,
+			.text,
+			.text-in-dark,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text,
+			.church-address {
+				margin-top: 0px;
+				margin-left: 30px;
+				margin-right: 30px;
+				}
+
+			.content-50-50-box,
+			.content-65-35-box {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;}
+
+			.page-text-james-less {font-size: 60px;}
+
+
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark,
+			.section-title-inside-box {
+				font-size: 26px;
+				}
+
+			.title,
+			.title-centered,
+			.title-centered-in-dark,
+			.title-inside-box {
+				font-size: 22px;
+				}
+
+			.text,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text {
+				font-size: 18px;
+				}
+			
+			.screen,
+			.screen-links,
+			.screen-links li,
+			.screen-links a,
+			.screen-links a:hover,
+			.active { 
+				display: block; } 
+
+			.left-aligned-photo,
+			.right-aligned-photo {display: none;} 
+			.centered-photo-mobile  {display: block;} 
+
+			.church-address {font-size: 14px; text-align: center}
+		}
+		      			 
+	</style>
+
+<body>		
+
+	<a href="index.html"><img src="./IMAGES/icon1.png" alt="Logo" class="logo" /></a>
+
+	<nav class="page-navbar">
+		<ul class="page-nav-links">
+			<li class="dropdown">
+				<a href="aboutus.html">About Us</a>
+				<div class="dropdown-content">
+					<a href="aboutus.html">Our Parish Mission</a>
+					    <a href="aboutus.html#servant-leaders">Our Servant Leaders</a>
+					<a href="aboutus.html#parish-membership">Parish Membership</a>
+					<a href="ccd.html">Religious Education</a>
+
+				</div>
+			</li>	
+			<li class="dropdown"> 
+				<a href="masstimes.html">Mass Times</a>
+				<div class="dropdown-content">
+				    <!-- <a href="masstimes.html">Our Easter Celebration</a> -->
+				    <a href="masstimes.html">Special Season Events</a>
+				    <a href="masstimes.html#sunday-schedule">Our Sunday Schedule</a>
+				    <a href="masstimes.html#prayer-and-reconciliation">Prayer and Reconciliation</a>
+				</div>
+			  </li> 
+		  <li class="dropdown"> 
+			  <a href="sacraments.html">Sacraments</a>
+			  <div class="dropdown-content">
+				  <a href="sacraments.html">Baptism</a>
+				  <a href="sacraments.html#marriage">Marriage</a>
+				  <a href="sacraments.html#homebound">For the Homebound</a>
+				  <a href="sacraments.html#anointing">Anointing of the Sick</a>
+				  <a href="sacraments.html#funeral">Funeral Mass</a>
+			  </div>
+		  </li>
+		  <li class="dropdown"> 
+			  <a href="contactus.html">Contact Us</a>
+		  </li>      
+	  </ul>
+	</nav>	
+	<div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+	
+		<div class="screen" id="screen">
+				<ul class="screen-links">
+					<li><a href="aboutus.html">About Us</a></l>
+					<li><a href="ccd.html">Our CCD Program</a></l>
+                              <li><a href="masstimes.html">Mass Times</a></l>
+					<li><a href="sacraments.html">Sacraments</a></li> 
+					<li><a href="contactus.html">Contact Us</a></li> 
+				</ul>
+		</div>
+	
+	<main>
+		<div class="top-space"></div>
+		<div class="top-mobile-space"></div>
+		<div class="centered-photo-mobile">
+			<br>
+			<img src="./IMAGES/first-communion-pexel-Rueda.jpg" style="width: 60%;"/>
+			<br><br>
+		</div>
+		<div class="content-45-55-box">
+			<div class="content-45-left"> 
+				<div class="page-text-james-less">ST. JAMES</div>
+				<div class="page-text-james-less">THE LESS</div>
+				<div class="page-text-roman">Roman Catholic Church</div>
+			</div>
+			
+			<div class="content-55-right"> 
+				<div class="title-inside-box">
+					Our Religious Education Program
+				</div>
+				<br>
+				<div class="text-inside-box">
+					Our Religious Education Program is central to the parish life of Saint James The Less Church.  We recognize the parents as primarily and principally responsible for the education of their children.
+				</div>
+				<br>
+				<div class="text-inside-box">
+					It is in this regard that we are committed to enhancing what you as parents have already provided by ensuring that your children receive the proper formation to receive the Sacraments in a timely manner. 
+				</div>
+			</div>
+		</div>
+		<div class="content-65-35-box">
+			<div class="content-65-left"> 
+				<br><br>
+				<div class="text">
+					Throughout the year, our program fosters an intentionally inclusive community of children, parents, and catechists, built on purposeful knowledge and Catholic values.
+				</div>
+				<br>
+				<div class="text">
+					We strive to model God’s love and grace for our children grow in dignity, respect and compassion, that they learn to use faith and reason to explore lifelong questions of purpose, meaning, and love. 
+				</div>
+				<br>
+				<div class="text">
+					In addition, we encourage our children to know and develop a personal and intimate relationship with Jesus Christ, along with a commitment of love and service to His Church.  It is our belief that a special personal bond with Jesus is essential to a lifelong process toward maturity in our Catholic faith as a lived reality.
+				</div>
+				<br>
+			</div>
+			<div class="content-35-right"> 
+				<br><br>
+				<div class="left-aligned-photo">
+					<img src="./IMAGES/first-communion-pexel-Rueda.jpg" style="width: 60%;"/>
+				</div>
+			</div>
+			
+		</div>
+		<div class="text">
+			Our program consists of weekly in-person classes for Grades 1-7 on Wednesdays and a modified schedule oon Mondays for Grade 8.  The program includes Sacrament preparation for Reconciliation, First communion and Confirmation. 
+		</div>
+
+		<br><br>
+		<div class="content-50-50-box">
+			
+			<div class="content-50-left"> 
+				<div class="right-aligned-photo" style="text-align: right; padding-right: 100px";>
+					<img src="./IMAGES/catechist-pexel-Krukau.jpg" style="width: 75%;"/>
+				</div>
+				<div class="centered-photo-mobile">
+					<img src="./IMAGES/catechist-pexel-Krukau.jpg" style="width: 60%;"/>
+				</div>
+			</div>
+	
+			<div class="content-50-right">
+				<div class="text-inside-box">
+					Our exceptional volunteer catechists are dedicated to their faith, to our parish families, and especially to our children. They enthusiastically give of their time and talents to help with the spiritual formation of your child.  
+				</div>
+				<br>
+				<div class="text-inside-box">
+					With a value-based approach to learning, they set formative foundations for our children to help them apply faith and reason to their daily lives.
+				</div>	
+			</div> 
+		</div>
+		
+		<br><br> 		
+		<div class="text">
+			Please contact us for more information.  We look forward to hearing from you!
+		</div>
+	
+		<br><br><br><br><br><br>
+
+		<div class="text">
+			Linda Rondinelli 
+		</div>
+		<div class="text">
+			Director of Religious Education
+		</div>
+		<br>
+		<div class="text">
+			Call us at 732-521-0100 or 732-521-1188; email us at sjtlccd@gmail.com. 
+		</div>
+		<br>
+		<div class="text">Our office hours are: 
+			<ul>
+				<li class="text-inside-box">Mondays from 9 am to 2 pm</li>
+				<li class="text-inside-box">Tuesday through Thursdays from 8 am to 2 pm</li>
+				<li class="text-inside-box">or by appointment</li>
+				</ul>
+		</div>
+
+	</main> 
+	 
+	<br><br><br><br><br><br><br><br>
+
+	<div class="church-address">
+		36 Lincoln Ave., Jamesburg, NJ | Tel. 732-521-0100
+	</div> 
+	<br><br>
+</body>
+<script> 
+
+
+hamburgerCharacter = "&#9776;"
+crossCharacter = "&#10005;"
+
+		function toggleMenu() {
+			const screen = document.getElementById("screen");
+			const hamburger = document.getElementById("hamburger");
+			
+			screen.classList.toggle("active");
+			hamburger.innerHTML = screen.classList.contains("active")
+				? crossCharacter : hamburgerCharacter;
+			}
+
+
+</script>
+</html>
+

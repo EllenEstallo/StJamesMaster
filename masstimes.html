@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
+			rel="stylesheet"/>
+		
+		<link rel="stylesheet" href="./pagenavbar.css" />
+		<link rel="stylesheet" href="./pagenavbar2.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./pagestyle.css" />
+		<link rel="stylesheet" href="./footer.css" />
+		<link rel="stylesheet" href="./pagenavbar.css">
+		
+		<title>Ellen Estallo Demo for Saint James The Less Church</title>
+	
+	</head>
+	<style>
+
+		@media (max-width: 768px) {
+
+			.logo {height: 40px;}
+    
+		 	.top-space, .page-nav-links, .page-text-james-less, .page-text-roman {display: none;}
+
+			.photo-desktop {display: none;}
+			.photo-mobile {display:block;}
+			 
+			.page-navbar {height: 60px;}
+
+			.hamburger, .top-mobile-space, .church-address
+			{display: block;}
+		
+			.page-text-james-less,
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark, 
+			.section-title-inside-box, 
+			.title,
+			.title-centered,
+			.title-centered-in-dark, 
+			.title-inside-box,
+			.text,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text,
+			.church-address {
+				margin-top: 0px;
+				margin-left: 30px;
+				margin-right: 30px;
+				}
+
+			.content-50-50-box {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;}
+
+			.page-text-james-less {font-size: 60px;}
+
+
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark,
+			.section-title-inside-box {
+				font-size: 26px;
+				}
+
+			.title,
+			.title-centered,
+			.title-centered-in-dark,
+			.title-inside-box {
+				font-size: 22px;
+				}
+
+			.text,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text {
+				font-size: 18px;
+				}
+			
+			.screen,
+			.screen-links,
+			.screen-links li,
+			.screen-links a,
+			.screen-links a:hover,
+			.active { 
+				display: block; } 
+
+			.church-address {font-size: 14px; text-align: center}
+		}
+		      			 
+	</style>
+<body>		
+
+	<a href="index.html"><img src="./IMAGES/icon1.png" alt="Logo" class="logo" /></a>
+
+	<nav class="page-navbar">
+		<ul class="page-nav-links">
+			<li class="dropdown">
+				<a href="aboutus.html">About Us</a>
+				<div class="dropdown-content">
+					<a href="aboutus.html">Our Parish Mission</a>
+					    <a href="aboutus.html#servant-leaders">Our Servant Leaders</a>
+					<a href="aboutus.html#parish-membership">Parish Membership</a>
+					<a href="ccd.html">Religious Education</a>
+
+				</div>
+			</li>	
+		    
+			<li class="dropdown"> 
+			  	<a href="masstimes.html">Mass Times</a>
+			  	<div class="dropdown-content">
+					<!-- <a href="masstimes.html">Our Easter Celebration</a> -->
+					<a href="masstimes.html#special-events">Special Season Events</a>
+					<a href="masstimes.html#sunday-schedule">Our Sunday Schedule</a>
+					<a href="masstimes.html#prayer-and-reconciliation">Prayer and Reconciliation</a>
+			  	</div>
+		    	</li>
+
+		    	<li class="dropdown"> 
+				<a href="sacraments.html">Sacraments</a>
+				<div class="dropdown-content">
+					<a href="sacraments.html">Baptism</a>
+					<a href="sacraments.html#marriage">Marriage</a>
+					<a href="sacraments.html#homebound">For the Homebound</a>
+					<a href="sacraments.html#anointing">Anointing of the Sick</a>
+					<a href="sacraments.html#funeral">Funeral Mass</a>
+				</div>
+			</li>  
+			
+			<li class="dropdown"> 
+				<a href="contactus.html">Contact Us</a>
+			</li> 
+		</ul>
+	</nav>
+
+	<div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+	<main>
+
+		<div class="screen" id="screen">
+				<ul class="screen-links">
+					<li><a href="aboutus.html">About Us</a></l>
+                              <li><a href="masstimes.html">Mass Times</a></l>
+					<li><a href="sacraments.html">Sacraments</a></li> 
+					<li><a href="ccd.html">Religious Education</a></li>	
+					<li><a href="contactus.html">Contact Us</a></li>	
+				</ul>
+		</div>
+		<div class="top-space"></div>
+		<div class="top-mobile-space"></div>
+
+		<!-- <div class="content-50-50-box">
+			<div class="content-50-left" style="text-align: center;">
+				<img src="/holyWeekCross.jpg" style="width: 50%;"/>
+			</div>
+			<br><br>
+			<div class="content-50-right">
+				<div class="title-inside-box">Palm Sunday, April 13</div>
+				<br>
+				<div class="text-inside-box">Palms will be blessed at all masses in our Sunday schedule. </div>
+				<br>
+				<div class="title-inside-box">Holy Thursday, April 17 </div>
+				<br>
+				<div class="text-inside-box">The Mass of the Lord's Supper with the traditional Washing of the Feet will be celebrated at a bilingual service at 7 pm. </div>
+				<br>
+				<div class="title-inside-box">Good Friday, April 18</div>
+				<br>
+				<div class="text-inside-box">We venerate the Holy Cross in celebrating The Passion of Our Lord at 3pm. </div>
+				<br>
+				<div class="text-inside-box">The Stations of the Lord in Spanish will also be prayed at 7pm. </div>
+			</div>
+		</div>  -->
+
+		<!-- EASTER -->
+		<!-- <div id="easter"></div>  -->
+		<!-- <div class=dark-background-section> -->
+			<!-- <br><br>  -->
+			<!-- <div class="photo-mobile"> 
+				<img src="/resurrection.jpg" style="width: 80%;"/>
+			</div>  -->
+			<!-- <br><br> -->
+			<!-- <div class="section-title-centered-in-dark"> 
+				Our Easter Celebration
+			</div>  -->
+			<!-- <br><br>  -->
+			<!-- <div class="content-50-50-box">
+
+				<div class="content-50-left">  
+					<div class="title-centered-in-dark">
+						Easter Vigil, April 19
+					</div> 
+					<div class="text-centered-in-dark">
+						Saturday at 8 pm  
+					</div>
+					<br><br>
+					<div class="title-centered-in-dark">
+						Easter Sunday, April 20
+					</div>
+					<div class="text-centered-in-dark">
+						8 am and 10 am in English
+					</div>
+					<div class="text-centered-in-dark">
+						12 noon in Spanish
+					</div> 
+				</div>
+				 <br><br> -->
+				<!-- </div>style="text-align: center;">  -->
+				<!-- <div class="content-50-right">
+					<div class="photo-desktop">
+						<img src="/resurrection.jpg" style="width: 80%;"/>
+					</div>
+				</div>  -->
+			<!-- </div>  -->
+			<!-- <div id="special-events"></div> -->
+			<!-- <br><br><br>  -->
+		<!-- </div>    -->
+		<br>
+		<div class="photo-mobile" style="text-align: center;">
+			<br><br>
+			<img src="./IMAGES/special-easter-pexels-suju-8012485.jpg" style="width: 70%;"/>
+			<br><br>
+		</div>
+		<br>
+		<div class="section-title-centered">
+			Special Season Events
+		</div>
+		<br><br>
+		<div class="content-50-50-box">
+			<div class="content-50-left">
+				<div class="photo-desktop">
+					<img src="./IMAGES/special-easter-pexels-suju-8012485.jpg" style="width: 70%;"/>
+				</div>  
+			</div> 	
+			<!-- <br><br> -->
+			<div class="content-50-right">
+				<div class="title-inside-box">Divine Mercy Sunday, April 27</div>
+				<br>
+				<div class="text-inside-box">The Chaplet will be recited at 9:40 am.  </div>
+				<div class="text-inside-box">The Celebration of Divine Mercy will be after the 2 pm mass in Spanish. </div>
+				<br>
+				<div class="title-inside-box">May Crowning in the Rosary Garden</div>
+				<br>
+				<div class="text-inside-box">Rosary and Crowning on Thursday, May 1st at 6 pm followed by refreshments in the parish hall. </div>
+				<br>
+				<div class="title-inside-box">First Holy Communion </div>
+				<br>
+				<div class="text-inside-box">Saturday, May 3 at 10 am </div>
+				<br>
+				<div class="title-inside-box">May Crowning in Church</div>
+				<br>
+				<div class="text-inside-box">Sunday, May 4 at the 10 am mass </div>
+				<br>
+				<div class="title-inside-box">The Rite of Confirmation </div>
+				<br>
+				<div class="text-inside-box">Wednesday, May 14 at 5 pm </div>
+				<br>
+				
+			</div> 
+		</div> 
+
+		 <div id="sunday-schedule"></div> 
+		<br><br><br><br><br> 
+
+		<div class="dark-background-section">
+			<p1 style="color: darkslategrey">Lorem</p1>
+		</div>
+		
+		
+		<br><br><br><br><br>
+		<div class="content-50-50-box">
+			<div class="content-50-left"> 
+				<div class="page-text-james-less">ST. JAMES</div>
+				<div class="page-text-james-less">THE LESS</div>
+				<div class="page-text-roman">Roman Catholic Church</div>
+			</div>
+			<div class="content-50-right">
+				<div class="section-title-inside-box">
+					Sunday Mass Schedule
+				</div>
+				<ul>
+					<li class="text-inside-box">Saturday 4 pm</li>
+					<li class="text-inside-box">Sunday:</li>
+					<ul>
+						<li class="text-inside-box">8 am</li>
+						<li class="text-inside-box">10 am </li>
+						<li class="text-inside-box">2 pm in Spanish</li>
+						<li class="text-inside-box">5 pm </li>
+					</ul>
+				</ul>
+				<br>
+				<div class="section-title-inside-box">
+					Daily Mass Schedule
+				</div>
+				<ul>
+					<li class="text-inside-box">Monday to Friday 8:30 am (livestreamed)</li>
+				</ul>
+			</div>
+		</div> 
+		<br>
+		<div class="text">
+			Please click <a href="https://vimeo.com/event/47678/embed"> here</a> for our livestreaming service.
+		</div>
+		<!-- PRAYER & RECONCILIATION -->
+
+		<div id="prayer-and-reconciliation">
+		</div>
+		<br><br><br><br> 
+		<div class=dark-background-section>
+			<br><br><br><br> 
+			<div class="section-title-centered-in-dark"> 
+				Prayer and Reconciliation
+			</div>
+			<br><br> 
+			<div class="content-50-50-box">
+				<div class="content-50-left"> 
+					<div class="title-centered-in-dark">
+						Confessions
+					</div>
+					<div class="text-centered-in-dark">
+						Thursdays at 4:30 pm 
+					</div>
+					<div class="text-centered-in-dark">
+						Saturdays at 3 pm 
+					</div>
+					<div class="text-centered-in-dark">
+						or by appointment 
+					</div>
+				</div>
+				<br><br>
+				<div class="content-50-right"> 
+					<div class="title-centered-in-dark">
+						Eucharistic Adoration
+					</div>
+					<div class="text-centered-in-dark">
+						Thursdays from 5-6 pm 
+					</div>
+					<div class="text-centered-in-dark">
+						All are welcome for any amount of time.
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<div class="title-centered-in-dark">
+				Recitation of the Most Holy Rosary
+			</div>
+			<div class="text-centered-in-dark">
+				1st Saturday 3:40 pm; 1st Sunday 9:40 am	
+			</div>
+			<div class="text-centered-in-dark">
+				Every Sunday 1:30 pm in Spanish
+			</div>
+			<br><br>
+			<div class="title-centered-in-dark">
+				Recitation of the Chaplet of the Divine Mercy
+			</div>
+			<div class="text-centered-in-dark">
+				2nd Sunday at 9:40 am
+			</div>
+
+			<!-- <div id="special-events"></div>   -->
+
+			<br><br><br><br>
+		</div>
+		<br><br><br><br>
+		<div class="church-address">
+			36 Lincoln Ave., Jamesburg, NJ | Tel. 732-521-0100
+		</div> 
+		<br><br>	
+	</main>  
+</body>
+<script> 
+
+
+hamburgerCharacter = "&#9776;"
+crossCharacter = "&#10005;"
+
+		function toggleMenu() {
+			const screen = document.getElementById("screen");
+			const hamburger = document.getElementById("hamburger");
+			
+			screen.classList.toggle("active");
+			hamburger.innerHTML = screen.classList.contains("active")
+				? crossCharacter : hamburgerCharacter;
+			}
+	
+</script>
+</html>
+

@@ -1,0 +1,68 @@
+/* 
+ */
+
+.hamburger {
+	position: fixed;
+	top: 20px;
+	right: 40px;
+	font-size: 50px;
+	color: #f9f7e3;
+	cursor: pointer;
+	display: none;
+	/* transform: translate(-50%, -50%); */
+}
+
+.screen {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 70%;
+	height: 100vh;
+	padding: 0;
+	background-color: rgba(41, 101, 172, 0.88);
+	display: flex;
+	flex-direction: column;
+	transition: left 1.5s ease;
+	display: none;
+}
+
+.screen-links {
+	margin-top: 230px;
+	list-style-type: none;
+}
+
+.screen-links li {
+	margin-bottom: 28px;
+}
+
+.screen-links a {
+	text-decoration: none;
+	font: 24px Arial;
+	color: #f9f7e3;
+}
+.screen-links a:hover {
+	text-decoration: underline;
+}
+.active {
+	left: 0;
+}
+
+.churchNameBox {
+	position: absolute;
+	left: 6%;
+	top: 15%;
+}
+
+.text-james-less {
+	font: 140px "Bebas Neue", sans-serif;
+	color: #f9f7e3;
+	line-height: 0.9;
+}
+
+.text-roman {
+	font: 36px Arial;
+	padding-left: 5px;
+
+	color: #f9f7e3;
+	line-height: 0.8;
+}

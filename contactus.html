@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
+			rel="stylesheet"/>
+		
+		<link rel="stylesheet" href="./pagenavbar.css" />
+		<link rel="stylesheet" href="./pagenavbar2.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./pagestyle.css" />
+		<link rel="stylesheet" href="./footer.css" />
+		
+		<title>Ellen Estallo Demo for Saint James The Less Church</title>
+	
+	</head>
+	<style>
+
+		@media (max-width: 768px) {
+
+			.logo {height: 40px;}
+    
+		 	.top-space, .page-nav-links, .page-text-james-less,
+			.page-text-roman, .centered-photo-desktop, .map-desktop {display: none}
+			 
+			.page-navbar {height: 60px;}
+
+			.hamburger, .top-mobile-space, .left-aligned-photo-desktop, .map-mobile, .church-address {display: block;}
+
+			.page-text-james-less,
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark, 
+			.section-title-inside-box, 
+			.title,
+			.title-centered,
+			.title-centered-in-dark, 
+			.text,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text,
+			.church-address {
+				margin-top: 0px;
+				margin-left: 30px;
+				margin-right: 30px;
+				}
+
+			.content-50-50-box,
+			.content-65-35-box {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;}
+
+			.page-text-james-less {font-size: 60px;}
+
+
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark,
+			.section-title-inside-box {
+				font-size: 26px;
+				}
+
+			.title,
+			.title-centered,
+			.title-centered-in-dark {
+				font-size: 22px;
+				}
+
+			.text,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text {
+				font-size: 18px;
+				}
+			
+			.screen,
+			.screen-links,
+			.screen-links li,
+			.screen-links a,
+			.screen-links a:hover,
+			.active { 
+				display: block; } 
+
+			.left-aligned-photo {
+				display: none;
+				}
+
+			.centered-photo-mobile {
+				display: block;
+				}
+
+			.church-address {font-size: 14px; text-align: center}
+
+			}		      			 
+</style>
+<body>		
+<main>
+      <a href="index.html"><img src="/IMAGES/icon1.png" alt="Logo" class="logo" /></a>
+
+	<nav class="page-navbar">
+	      <ul class="page-nav-links">
+		      <li class="dropdown">
+				<a href="aboutus.html">About Us</a>
+				<div class="dropdown-content">
+					<a href="aboutus.html">Our Parish Mission</a>
+					    <a href="aboutus.html#servant-leaders">Our Servant Leaders</a>
+					<a href="aboutus.html#parish-membership">Parish Membership</a>
+					<a href="ccd.html">Religious Education</a>
+
+				</div>
+			</li>	
+		      <li class="dropdown"> 
+				<a href="masstimes.html">Mass Times</a>
+				<div class="dropdown-content">
+				    <!-- <a href="masstimes.html">Our Easter Celebration</a> -->
+				    <a href="masstimes.html#special-events">Special Events</a>
+				    <a href="masstimes.html#sunday-schedule">Our Sunday Schedule</a>
+				    <a href="masstimes.html#prayer-and-reconciliation">Prayer and Reconciliation</a>
+				</div>
+			  </li>  
+			<li class="dropdown"> 
+			      <a href="sacraments.html">Sacraments</a>
+			      <div class="dropdown-content">
+				      <a href="sacraments.html">Baptism</a>
+					<a href="sacraments.html#marriage">Marriage</a>
+					<a href="sacraments.html#homebound">For the Homebound</a>
+					<a href="sacraments.html#anointing">Anointing of the Sick</a>
+					<a href="sacraments.html#funeral">Funeral Mass</a>
+				</div>
+			</li> 
+                  <li class="dropdown"> 
+			      <a href="contactus.html">Contact Us</a>
+			</li>     
+		</ul>
+	</nav>
+	
+	<div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+	<div>
+	      <div class="screen" id="screen">
+		      <ul class="screen-links">
+			      <li><a href="aboutus.html">About Us</a></l>
+                        <li><a href="masstimes.html">Mass Times</a></l>
+				<li><a href="sacraments.html">Sacraments</a></li> 
+                        <li><a href="ccd.html">Our CCD Program</a></li> 
+				<li><a href="contactus.html">Contact Us</a></li> 
+		      </ul>
+		</div>
+		<div class="top-space"></div>
+		<div class="top-mobile-space"></div>
+		
+            <div class="content-45-55-box">
+		      <div class="content-45-left"> 
+				<div class="page-text-james-less">ST. JAMES</div>
+				<div class="page-text-james-less">THE LESS</div>
+				<div class="page-text-roman">Roman Catholic Church</div>
+			</div>
+			<div class="content-55-right"> 
+			      <div class="section-title-inside-box">Come pay us a visit!</div>
+				<br><br>
+				<div class="text-inside-box">
+					We are located at 36 Lincoln Avenue, Jamesburg NJ 08831
+				</div>
+				<br>
+                        <div class="text-inside-box">Our office hours are: </div>
+				<ul>
+					<li class="text-inside-box">Mondays from 9 am to 2 pm</li>
+					<li class="text-inside-box">Tuesday through Thursdays from 8 am to 2 pm</li>
+					<li class="text-inside-box">Closed on Fridays</li>
+					<li class="text-inside-box">Summer hours until 1 pm</li>
+				</ul>
+                        <div class="text-inside-box">Tel. 732-521-0100</div>
+				<div class="text-inside-box">Email: jamestheless1880@gmail.com</div>
+                        <br>
+                        <div class="text-inside-box">Religious Education Office:</div>
+                        <div class="text-inside-box">please call 732-521-1188 or email at sjtlccd@gmail.com</div>
+				<div class="text-spacer">spacer</div>
+			</div>
+		</div>
+		<br><br>
+
+            <div class="map-desktop" style="text-align: center;">
+                  <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.4135216794502!2d-74.4425578240575!3d40.35535237144947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3daef7716a46f%3A0x96662c3ea029c5c6!2s36%20Lincoln%20Ave%2C%20Jamesburg%2C%20NJ%2008831!5e0!3m2!1sen!2sus!4v1736916892073!5m2!1sen!2sus"
+                        width="675"
+                        height="630"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                  </iframe> 
+		</div>
+            <div class="map-mobile" style="text-align: center;">
+                  <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.4135216794502!2d-74.4425578240575!3d40.35535237144947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3daef7716a46f%3A0x96662c3ea029c5c6!2s36%20Lincoln%20Ave%2C%20Jamesburg%2C%20NJ%2008831!5e0!3m2!1sen!2sus!4v1736916892073!5m2!1sen!2sus"
+                        width="337"
+                        height="315"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                  </iframe> 
+		</div>  
+		<br><br><br>
+      </div>
+      <div class="title">We look forward to seeing you soon!</div>
+      <br><br><br><br>
+</main>  
+	<br><br>
+	<div class="church-address">
+		36 Lincoln Ave., Jamesburg, NJ | Tel. 732-521-0100
+	</div> 
+	<br><br>
+</body>
+<script> 
+
+
+hamburgerCharacter = "&#9776;"
+crossCharacter = "&#10799;"
+
+		function toggleMenu() {
+			const screen = document.getElementById("screen");
+			const hamburger = document.getElementById("hamburger");
+			
+			screen.classList.toggle("active");
+			hamburger.innerHTML = screen.classList.contains("active")
+				? crossCharacter : hamburgerCharacter;
+			}
+
+</script>
+</html>
+
