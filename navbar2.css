@@ -66,3 +66,22 @@
 	color: #f9f7e3;
 	line-height: 0.8;
 }
+.banner {
+	background-color: bisque;
+	/* height: 100px; */
+	width: 100%;
+	border-bottom: blue px solid;
+}
+
+.text-banner {
+	font: 22px Arial;
+	text-align: center;
+
+	color: blue;
+	padding: 20px;
+	/* line-height: 0.8; */
+}
+
+/* <div class="banner">
+				<div class="text-banner">We welcome Bishop Checcio as he celebrates Mass on Saturday, May 10 at 4 pm! </div>
+			</div> */
