@@ -50,7 +50,7 @@
 .churchNameBox {
 	position: absolute;
 	left: 6%;
-	top: 15%;
+	top: 22vh;
 }
 
 .text-james-less {
@@ -66,22 +66,41 @@
 	color: #f9f7e3;
 	line-height: 0.8;
 }
+
+/* .text-banner {
+	/* font: 27px Arial; */
+/* text-align: center; */
+/* padding: 10px; */
+/* background-color: #fceecf; */
+/* background-color: black; */
+/* font: 22px "Arial"; */
+/* color: #6d4237; */
+/* color: white; */
+/* } */
+
+/* .text-banner { */
+/* position: absolute; */
+/* left: 6%; */
+/* top: 72vh; */
+/* text-align: center; */
+/* justify-content: center; */
+/* } */
+
 .banner {
-	/* height: 100px; */
+	position: absolute;
+	/* height: 50px; */
+	background-color: #3074c7df;
 	width: 100%;
-	text-align: center;
-	margin-top: 70vh;
-	background-color: rgba(230, 230, 230, 0.281);
+	/* left: 6%; */
+	top: 85vh;
+	/* text-align: center; */
+	/* justify-content: center; */
 }
 
 .text-banner {
-	font: 27px Arial;
+	color: white;
 	text-align: center;
 	padding: 20px;
-	color: white;
-	font-weight: 700;
+	font: 22px "Arial";
+	letter-spacing: 0.25px;
 }
-
-/* <div class="banner">
-				<div class="text-banner">We welcome Bishop Checcio as he celebrates Mass on Saturday, May 10 at 4 pm! </div>
-			</div> */
