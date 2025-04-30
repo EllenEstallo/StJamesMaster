@@ -67,19 +67,19 @@
 	line-height: 0.8;
 }
 .banner {
-	background-color: bisque;
 	/* height: 100px; */
 	width: 100%;
-	border-bottom: blue px solid;
+	text-align: center;
+	margin-top: 70vh;
+	background-color: rgba(230, 230, 230, 0.281);
 }
 
 .text-banner {
-	font: 22px Arial;
+	font: 27px Arial;
 	text-align: center;
-
-	color: blue;
 	padding: 20px;
-	/* line-height: 0.8; */
+	color: white;
+	font-weight: 700;
 }
 
 /* <div class="banner">
