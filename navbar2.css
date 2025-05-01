@@ -49,14 +49,6 @@
 	left: 6%;
 	top: 15vh;
 }
-/* .churchNameBox1 {
-	position: absolute;
-	left: 6%;
-	top: 75vh;
-	background-color: blue;
-	text-align: center;
-	font: 22px Arial;
-} */
 
 .churchNameBox1 {
 	margin-top: 37%;
@@ -90,12 +82,3 @@
 	color: #f9f7e3;
 	line-height: 0.8;
 }
-
-/* .text-roman1 {
-	font: 36px Arial;
-	padding-left: 5px;
-
-	color: #f9f7e3;
-	line-height: 0.8;
-	background-color: #3074c7df;
-} */
