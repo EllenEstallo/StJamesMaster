@@ -47,9 +47,28 @@
 .churchNameBox {
 	position: absolute;
 	left: 6%;
-	top: 22vh;
+	top: 15vh;
 }
+/* .churchNameBox1 {
+	position: absolute;
+	left: 6%;
+	top: 75vh;
+	background-color: blue;
+	text-align: center;
+	font: 22px Arial;
+} */
 
+.churchNameBox1 {
+	margin-top: 37%;
+	background-color: #3074c5;
+	text-align: center;
+	font: 22px Arial;
+	padding: 20px;
+	justify-content: center;
+	/* centers horizontally */
+	align-items: center;
+	/* centers vertically */
+}
 .text-james-less {
 	font: 140px "Bebas Neue", sans-serif;
 	color: #f9f7e3;
@@ -62,19 +81,21 @@
 
 	color: #f9f7e3;
 	line-height: 0.8;
+	/* background-color: #3074c7df; */
+}
+.text-roman1 {
+	font: 24px Arial;
+	padding-left: 5px;
+
+	color: #f9f7e3;
+	line-height: 0.8;
 }
 
-.banner1 {
-	position: absolute;
+/* .text-roman1 {
+	font: 36px Arial;
+	padding-left: 5px;
+
+	color: #f9f7e3;
+	line-height: 0.8;
 	background-color: #3074c7df;
-	width: 100%;
-	top: 85vh;
-}
-
-.text-banner1 {
-	color: white;
-	text-align: center;
-	padding: 20px;
-	font: 22px "Arial";
-	letter-spacing: 0.25px;
-}
+} */
