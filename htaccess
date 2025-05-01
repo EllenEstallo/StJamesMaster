@@ -12,7 +12,7 @@ RewriteRule .* - [E=UPGRADE]
         Header always set Content-Security-Policy "upgrade-insecure-requests;" env=UPGRADE
     </IfModule>
 </IfModule>
-Redirect 301 /bulletins/ /bulletin.pdf
+Redirect 301 /bulletins/ https://drive.google.com/file/d/1lpZ_yRodznAlcrAYUVrshJrUFYY9AnYu/view
 Redirect 301 /mass-schedule/ /masstimes.html
 Redirect 301 /contact-us/ /contactus.html
 Redirect 301 /lazarus-ministry/ /sacraments.html
