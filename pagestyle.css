@@ -334,8 +334,8 @@ html {
 #calendar {
 	background: white; /* White background for the calendar */
 	border: 2px solid #ccc;
-	width: 800px;
-	height: 600px;
+	width: 1200px;
+	height: 650px;
 	position: relative; /* Relative positioning for absolute elements inside */
 	border-radius: 8px; /* Rounded corners */
 }
