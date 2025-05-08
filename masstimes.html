@@ -379,7 +379,16 @@
 			<br><br><br><br>
 		</div>
 		<br><br><br><br>
-
+		<div class="text">
+			For our monthly calendar, please <a href="#" onclick="showCalendar()">here</a>.
+		  </div>
+		  
+		  <div class="overlay" id="calendarOverlay">
+			<button class="close" onclick="closeCalendar()">×</button>
+			<iframe id="calendar" src="https://calendar.google.com/calendar/embed?src=b69cc559d1eca59980eddc8147e00611b0452b95b8045b29fa966805866dad92%40group.calendar.google.com&ctz=America%2FNew_York" 
+				  frameborder="0" scrolling="no"></iframe>
+		  </div>
+		  
 		
 		  
 		
@@ -403,6 +412,14 @@ crossCharacter = "&#10005;"
 			hamburger.innerHTML = screen.classList.contains("active")
 				? crossCharacter : hamburgerCharacter;
 			}
+
+			function showCalendar() {
+        document.getElementById('calendarOverlay').style.display = 'flex'; // Show overlay
+    }
+
+    function closeCalendar() {
+        document.getElementById('calendarOverlay').style.display = 'none'; // Hide overlay
+    }
 	
 
   </script>
