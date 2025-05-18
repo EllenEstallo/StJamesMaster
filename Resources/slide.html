@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Slide Effect</title>
+		<style>
+			#slide {
+				width: 200px;
+				height: 100px;
+				background-color: lightblue;
+				position: relative;
+				left: -100%; /* Start off-screen */
+				transition: left 0.5s; /* Animation */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="slide"></div>
+		<button onclick="slideIn()">Slide In</button>
+
+		<script>
+			function slideIn() {
+				document.getElementById("slide").style.left = "0"; // Move to the right
+			}
+		</script>
+	</body>
+</html>

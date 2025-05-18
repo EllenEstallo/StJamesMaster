@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Responsive Navbar</title>
+		<style>
+			body {
+				font-family: "Gill Sans", sans-serif;
+				margin: 0;
+			}
+			.navbar {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: black;
+				padding: 10px 20px;
+				position: relative;
+			}
+			.navbar-links {
+				display: flex;
+			}
+			.navbar-link {
+				color: white;
+				margin-left: 20px;
+				text-decoration: none;
+			}
+			.hamburger {
+				display: none;
+				cursor: pointer;
+				color: white;
+				font-size: 24px;
+			}
+			.mobile-menu {
+				display: none;
+				position: absolute;
+				top: 0;
+				left: -100%;
+				height: 100%;
+				width: 70%;
+				background: black;
+				flex-direction: column;
+				padding: 20px;
+				transition: left 0.3s ease;
+			}
+			.mobile-menu.active {
+				left: 0;
+			}
+			@media (max-width: 768px) {
+				.navbar-links {
+					display: none;
+				}
+				.hamburger {
+					display: block;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="logo">Logo</div>
+			<div class="navbar-links">
+				<a href="#" class="navbar-link">Services</a>
+				<a href="#" class="navbar-link">Schedule</a>
+				<a href="#" class="navbar-link">Community</a>
+				<a href="#" class="navbar-link">Contact Us</a>
+			</div>
+			<div class="hamburger" onclick="toggleMenu()">☰</div>
+		</div>
+
+		<div class="mobile-menu" id="mobileMenu">
+			<div class="hamburger" onclick="toggleMenu()">Close</div>
+			<a href="#" class="navbar-link">Services</a>
+			<a href="#" class="navbar-link">Schedule</a>
+			<a href="#" class="navbar-link">Community</a>
+			<a href="#" class="navbar-link">Contact Us</a>
+		</div>
+
+		<script>
+			function toggleMenu() {
+				const menu = document.getElementById("mobileMenu");
+				menu.classList.toggle("active");
+			}
+		</script>
+	</body>
+</html>

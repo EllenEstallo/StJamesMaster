@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Toggle Slide Effect</title>
+		<style>
+			#slide {
+				width: 200px;
+				height: 100px;
+				background-color: lightblue;
+				position: relative;
+				left: -100%; /* Start off-screen */
+				transition: left 0.5s; /* Animation */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="slide"></div>
+		<button onclick="toggleSlide()">Toggle Slide</button>
+
+		<script>
+			let isVisible = false; // Track visibility of the slide div
+
+			function toggleSlide() {
+				if (isVisible) {
+					document.getElementById("slide").style.left = "-100%"; // Slide out
+				} else {
+					document.getElementById("slide").style.left = "0"; // Slide in
+				}
+				isVisible = !isVisible; // Toggle visibility state
+			}
+		</script>
+	</body>
+</html>

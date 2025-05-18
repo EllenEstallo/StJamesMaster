@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sliding Screen on Background Image</title>
+		<style>
+			body {
+				margin: 0;
+				font-family: Arial, sans-serif;
+				overflow: hidden; /* Prevent scrolling */
+			}
+
+			nav {
+				background-color: #333;
+				color: white;
+				padding: 15px;
+				text-align: center;
+				position: relative;
+				z-index: 1; /* Bring navbar above the background */
+			}
+
+			.background-image {
+				background-image: url("Gym-iStock-1153468390.jpg");
+				height: 100vh; /* Full height */
+				background-position: center; /* Center the image */
+				background-repeat: no-repeat; /* Do not repeat the image */
+				background-size: cover; /* Cover the entire area */
+				position: relative; /* Ensure it's in the stacking context */
+				z-index: 0; /* Position behind the navbar */
+			}
+
+			.sliding-panel {
+				position: absolute;
+				top: 50%; /* Center vertically */
+				left: 50%; /* Center horizontally */
+				transform: translate(-50%, -50%); /* Adjust position back up and left */
+				background-color: rgba(
+					255,
+					255,
+					255,
+					0.8
+				); /* White background with transparency */
+				width: 300px;
+				height: 200px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+				z-index: 2; /* Bring sliding panel above background */
+				transition: transform 0.4s ease; /* Transition effect */
+			}
+
+			.sliding-panel.active {
+				transform: translate(-50%, -50%) translateY(-100%); /* Slide up on activation */
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<h1>My Website</h1>
+		</nav>
+		<div class="background-image"></div>
+		<div class="sliding-panel" id="slidingPanel">
+			<!-- Content of your sliding panel goes here -->
+			<h2>Sliding Panel</h2>
+			<p>This is a simple sliding panel.</p>
+		</div>
+
+		<script>
+			// Example function to toggle the sliding panel
+			document.addEventListener("DOMContentLoaded", () => {
+				const slidingPanel = document.getElementById("slidingPanel");
+				setTimeout(() => {
+					slidingPanel.classList.toggle("active"); // Add the 'active' class after 1 second
+				}, 1000);
+			});
+		</script>
+	</body>
+</html>

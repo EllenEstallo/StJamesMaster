@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+}
+
+.navbar {
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.logo {
+	color: white;
+	font-size: 24px;
+}
+
+.nav-links {
+	display: flex;
+	gap: 20px;
+}
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/* Hamburger Icon - initially hidden */
+.menu-icon {
+	display: none;
+	color: white;
+	font-size: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	.nav-links {
+		display: none; /* Hide links by default on mobile */
+		flex-direction: column; /* Stack links vertically */
+		background-color: black; /* Background for dropdown */
+		position: absolute; /* Position relative to the navbar */
+		top: 60px; /* Below the navbar */
+		right: 0; /* Align to the right */
+		width: 100%; /* Full-width */
+		padding: 10px 0; /* Padding for links */
+	}
+
+	.nav-links.active {
+		display: flex; /* Show links when active */
+	}
+
+	.menu-icon {
+		display: block; /* Show hamburger icon */
+	}
+}

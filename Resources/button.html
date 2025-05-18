@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		#displayText {
+			display: none;
+		}
+	</style>
+	<head>
+		<title>Button Example</title>
+	</head>
+	<body>
+		<button id="myButton">Click me!</button>
+		<p id="displayText">Hello, you clicked the button!</p>
+
+		<script>
+			// you get the button
+			document.getElementById("myButton");
+			// when clicked the element displayText gets displayed.
+			document.addEventListener("click", function () {
+				document.getElementById("displayText").style.display = "block";
+			});
+		</script>
+	</body>
+</html>

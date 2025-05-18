@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Toggle Button Example</title>
+	</head>
+	<body>
+		<button id="toggleButton">Show Message</button>
+		<p id="message" style="display: none">Hello! You toggled the button!</p>
+
+		<script>
+			const button = document.getElementById("toggleButton");
+			const message = document.getElementById("message");
+
+			button.addEventListener("click", () => {
+				if (message.style.display === "none") {
+					message.style.display = "block";
+					button.textContent = "Hide Message";
+				} else {
+					message.style.display = "none";
+					button.textContent = "Show Message";
+				}
+			});
+		</script>
+	</body>
+</html>
