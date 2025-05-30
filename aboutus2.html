@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
+			rel="stylesheet"/>
+		
+		<link rel="stylesheet" href="./pagenavbar.css" />
+		<link rel="stylesheet" href="./pagenavbar2.css" />
+		<link rel="stylesheet" href="./.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./pagestyle.css" />
+		<link rel="stylesheet" href="./footer.css" />
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+		<title>Saint James The Less Roman Catholic Church</title>
+		<meta name="description" content="Learn more about Saint James The Less Roman Catholic Church. Visit our website for details." />
+	
+	</head>
+	<style>
+
+		@media (max-width: 768px) {
+			.bulletin {display: none;}
+			.logo {height: 40px;}
+    
+		 	.top-space, .page-nav-links, .page-text-james-less,
+			.page-text-roman, .centered-photo-desktop {display: none}
+			 
+			.page-navbar {height: 60px;}
+
+			.hamburger, .top-mobile-space, .left-aligned-photo-desktop, .church-address {display: block;}
+
+			.page-text-james-less,
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark, 
+			.section-title-inside-box, 
+			.title,
+			.title-centered,
+			.title-centered-in-dark, 
+			.text,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text,
+			.church-address {
+				margin-top: 0px;
+				margin-left: 30px;
+				margin-right: 30px;
+				}
+			.content-45-55-box,
+			.content-50-50-box,
+			.content-65-35-box {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;}
+
+			.page-text-james-less {font-size: 60px;}
+
+
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark,
+			.section-title-inside-box {
+				font-size: 26px;
+				}
+
+			.title,
+			.title-centered,
+			.title-centered-in-dark {
+				font-size: 22px;
+				}
+
+			.text,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text {
+				font-size: 18px;
+				}
+			
+			/*  */
+			.title-centered-in-dark {color: white;}
+			/*  */
+			.screen,
+			.screen-links,
+			.screen-links li,
+			.screen-links a,
+			.screen-links a:hover,
+			.active { 
+				display: block; } 
+
+			.left-aligned-photo {
+				display: none;
+				}
+
+			.centered-photo-mobile {
+				display: block;
+				}
+
+			.church-address {font-size: 14px; text-align: center}
+
+			}	
+			
+			
+	</style>
+<body>		
+
+<a href="index.html"><img src="./IMAGES/icon1.png" alt="Logo" class="logo" /></a>
+
+<nav class="page-navbar">
+	<ul class="page-nav-links">
+		<li class="dropdown">
+			<a href="aboutus.html">About Us</a>
+			<div class="dropdown-content">
+				<a href="aboutus.html">Our Parish Mission</a>
+				    <a href="aboutus.html#servant-leaders">Our Servant Leaders</a>
+				<a href="aboutus.html#parish-membership">Parish Membership</a>
+				<a href="aboutus.html#parish-news">Parish News</a>
+				<a href="ccd.html">Religious Education</a>
+
+			</div>
+		</li>	
+		    
+		<li class="dropdown"> 
+			<a href="masstimes.html">Mass Times</a>
+			<div class="dropdown-content">
+			    <!-- <a href="masstimes.html">Our Easter Celebration</a> -->
+			    <a href="masstimes.html">Special Events</a>
+			    <a href="masstimes.html#sunday-schedule">Our Sunday Schedule</a>
+			    <a href="masstimes.html#prayer-and-reconciliation">Prayer and Reconciliation</a>
+			</div>
+		  </li> 
+			
+		<li class="dropdown"> 
+			<a href="sacraments.html">Sacraments</a>
+			<div class="dropdown-content">
+				<a href="sacraments.html">Baptism</a>
+				<a href="sacraments.html#marriage">Marriage</a>
+				<a href="sacraments.html#homebound">For the Homebound</a>
+				<a href="sacraments.html#anointing">Anointing of the Sick</a>
+				<a href="sacraments.html#funeral">Funeral Mass</a>
+			</div>
+		</li>
+			
+		<li class="dropdown"> 
+			<a href="contactus.html">Contact Us</a>
+		</li>      
+	</ul>
+</nav>
+	
+<div class="hamburger" id="hamburger" onclick="toggleMenu()">
+	&#9776;
+</div>
+	
+<div>
+	<div class="screen" id="screen">
+		<ul class="screen-links">
+			<li><a href="aboutus.html">About Us</a></l>
+                  <li><a href="masstimes.html">Mass Times</a></l>
+			<li><a href="sacraments.html">Sacraments</a></li> 
+			<li><a href="ccd.html">Religious Education</a></l>	
+			<li><a href="contactus.html">Contact Us</a></li> 
+		</ul>
+	</div>
+		<div class="top-space"></div>
+		<div class="top-mobile-space"></div>
+
+		<div class="content-45-55-box">
+			<div class="content-45-left"> 
+				<div class="page-text-james-less">ST. JAMES</div>
+				<div class="page-text-james-less">THE LESS</div>
+				<div class="page-text-roman">Roman Catholic Church</div>
+			</div>
+			<div class="content-55-right"> 
+				<!-- <div class="top-mobile-space"></div> -->
+				<div class="section-title-inside-box">
+					OUR PARISH MISSION
+				</div>
+				<br><br>
+				<div class="section-title-inside-box">We foster love by example.
+				</div>
+				<br>
+				<div class="text-inside-box">
+					As a parish community dedicated to proclaiming the Gospel of Jesus, we here at St. James are committed to further His mission.
+				</div>
+				<!-- <div class="text-spacer">spacer</div> -->
+			</div>
+		</div>
+		<br><br>
+		<div class="full-width-text">
+			Through His Word, the Liturgy and the Sacraments, through music, evangelization and religious education, through prayer and the intercession of our Blessed Virgin Mary, we deepen our knowledge, our understanding and our practice of our faith put to action.
+			<br><br>
+			Committing ourselves to serving the needs of our people for spiritual and social development, and economic growth, it is by design and intention that we foster love by example.  
+			<br><br>
+			We invite you to join us in doing so. 
+		</div>  
+		<div class="servant-leaders" id="servant-leaders">
+		<br><br><br><br> 
+		<div class=dark-background-section>
+		  
+			<br><br><br><br> 
+			
+			<div class="section-title-centered-in-dark"> 
+				PARISH LEADERSHIP
+			</div> 
+			<br><br>
+			<div class="section-title-centered-in-dark"> 
+				We are called to serve God's people.
+			</div> 
+			<br><br>
+
+			<div class="title-centered-in-dark">
+				Rev. Juan Carlos Gaviria
+			</div>
+			<div class="text-centered-in-dark">  
+				Parish Administrator
+			</div> 
+			<br><br>
+
+			<div class="title-centered-in-dark">
+				Rev. Peter Akkanath Chakkunny, CMI
+			</div>
+			<div class="text-centered-in-dark">
+				In Residence
+			</div>
+			<br><br>
+			<div class="title-centered-in-dark">
+				Linda Rondinelli
+			</div>
+			<div class="text-centered-in-dark">
+				Director of Religious Education
+			</div>
+			<br><br>
+			<div class="content-50-50-box">
+
+				<div class="content-50-left"> 
+					<div class="title-centered-in-dark">
+						Christine Briegs
+					</div>
+					<div class="text-centered-in-dark">
+						Parish Secretary
+					</div>
+				</div>
+				<br>
+				<div class="content-50-right">
+
+					<div class="title-centered-in-dark">
+						Ellen Estallo
+					</div>
+					<div class="text-centered-in-dark">
+						Music Director
+					</div>
+				</div>
+			</div>
+			
+			<br><br><br><br>
+			<div class="section-title-centered-in-dark"> 
+				CONTACT INFORMATION
+			</div> 
+			<br><br>
+			<div class="title-centered-in-dark">
+				Office Address: 36 Lincoln Avenue, Jamesburg NJ 08831
+			</div>
+			<br><br>
+			<div class="title-centered-in-dark">Office Hours:</div>
+			<div class="title-centered-in-dark">Mondays from 9 am to 2 pm</div>
+			<div class="title-centered-in-dark">Tuesday through Thursdays from 8 am to 2 pm</div>
+			<div class="title-centered-in-dark">Closed on Fridays</div>
+			<div class="title-centered-in-dark">Summer hours until 1 pm</div>
+			<br><br>
+			<div class="title-centered-in-dark">
+				Tel. 732-521-0100 and Email: jamestheless1880@gmail.com
+			</div>
+			<br><br><br><br>
+			<div class="section-title-centered-in-dark"> 
+				Religious Education Office:
+			</div> 
+			<br><br>
+			<div class="title-centered-in-dark">
+				please call 732-521-1188 or email at sjtlccd@gmail.com
+			</div>
+
+			<br><br><br>
+			<div id="parish-membership"></div><br><br><br>
+		</div>
+	</div> 
+	
+	<!-- <div id="parish-membership"> -->
+		<br><br><br><br><br>
+		<div class="centered-photo-mobile">
+			<img src="./IMAGES/IMG_1463.jpg" style="width: 80%;"/>
+		</div>
+		<br>
+		<div class="section-title-centered">
+		PARISH MEMBERSHIP
+		</div>
+		<br><br>
+		<div class="content-65-35-box">
+			<div class="content-65-left"> 
+				
+				<div class="section-title">Make our parish your home.
+				</div>
+				<br>
+				<div class="text">There is more to be said about being a parishioner of St. James The Less Church beyond being registered.  We may identify as parishioners after receiving a Sacrament: perhaps this is where we or our children were baptized, received First Holy Communion, or were confirmed or married. 
+				</div>
+				<br>
+				<div class="text">St. James is a place where we encounter Christ at the banquet table of the altar and in other forms as well.  We serve one another in ministry, gathering to grow in prayer, service, and in understanding of our faith. It is here where we gather as a family and worship our One True God. 
+				</div>
+			</div>
+			<div class="content-35-right">  
+				<div class="left-aligned-photo">
+					<!-- <img src="./IMAGES/parish-membership2-iStock-183889612.jpg" style="width: 70%;"/> -->
+					<br><br><br>
+					<img src="./IMAGES/IMG_1463.jpg" style="width: 70%;"/>
+
+				</div>
+			</div>
+			
+		</div>
+		<br><br>
+		<div class="title">
+			Saint James The Less Church is our family, our home.
+		</div>
+		<br>
+		<div class="text">
+			We are sent out to live out the Gospel. We work together for God’s glory. It is with our commitment to our parish that as a family, we grow in faith to achieve what we are called to do. Being a parishioner is not forced upon us, but instead comes from a deeper place — within each of us.
+		</div>
+		<br><br>
+		<div class="title">
+			We invite you to make Saint James The Less Church your home.
+		</div>
+		<br>
+		<div class="text">
+			Please speak to Fr. Juan, Fr. Peter or to any of our ministers at mass.  Give us a call, or even better pay us a visit!  We would love to have you as one of our own.
+		</div>
+		<br><br><br>
+	</div>
+	
+<!-- <div class="bulletin"> 
+	<div class="text">Please click 
+		<a href="bulletin.pdf">here</a> for our current parish bulletin.
+	</div> -->
+
+<!-- Elfsight PDF Embed | Untitled PDF Embed -->
+
+<div class="text">Below is our current parish bulletin.
+</div> <br><br>
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-38532d93-0736-474e-bb62-4569dc035e9e" data-elfsight-app-lazy></div>
+</div>
+
+<div id="parish-news"></div>
+<br><br><br><br><br>
+<div class="dark-background-section">
+	<p1 style="color: darkslategrey">Lorem</p1>
+</div>
+<br><br><br><br>
+<div class="section-title-centered">
+	PARISH NEWS
+</div>
+<br><br><br>
+<div class="title">
+	Bishop Checchio's Visit
+</div>
+<br><br><br>
+<div class="text">May 10, 2025<br><br>St. James The Less was blessed with a visit from Bishop Checchio on Saturday, May 10 to celebrate the 4 pm Mass. <br><br>Here are some photos marking the event:</div>
+<!-- Elfsight Photo Gallery | Memorable Moments from Pope Francis' Funeral  -->
+<script src="https://static.elfsight.com/platform/platform.js" async>	
+</script>
+<div class="elfsight-app-948a3c5c-f13f-4d68-ad05-3b14b0eac132" data-elfsight-app-lazy>	
+</div><br><br><br>
+<br><br><br>
+<div class="title">
+	Habemus Papam! We Have a New Pope!
+</div>
+<br><br><br>
+<div class="text">
+	May 8, 2025<br><br>
+	Statement from Most Rev. James F. Checchio, JCD, MBA, Bishop of  Metuchen, on the election of Pope Leo XIV.<br><br>“And so I say to you, you are Peter, and upon this rock I will build my church, and the gates of the netherworld shall not prevail against it.”<br><br>The Diocese of Metuchen rejoices that we, once again, have our Peter, our rock to lead and guide the Church as Holy Father.<br><br> We are grateful to God for the gift of Pope Leo XIV, and I ask the faithful of the Diocese of Metuchen to join me in prayers of thanksgiving to God.
+	<br><br><br>
+</div><br><br><br>
+<div class="title">
+	Bishop Checchio's Statement on the Passing of Pope Francis
+</div>
+<br><br><br>
+<div class="text">
+	April 22, 2025<br><br>
+	With heavy hearts the Diocese of Metuchen mourns the passing of His Holiness, Pope Francis.<br><br>
+	From the moment of his election as Supreme Pontiff when he took the name Francis, our Holy Father has emphasized the mercy of God, embracing in his Petrine ministry the poor, the migrant, the marginalized and all those broken by this world’s problems and concerns.<br><br>
+	We entrust his noble soul to the hands of our Blessed Mother to accompany him to our Father's house.  In this Jubilee year in which Pope Francis called us to be Pilgrims of Hope, he has now made the ultimate pilgrimage to the embrace of our loving God.
+	<br><br><br>
+</div><br><br><br>
+<div class="title">
+	Pope Francis' Legacy
+</div>
+</div><br><br><br>
+<div class="text">
+	Read about Pope Francis' legacy as a "global pastor who in word and deed preached mercy and outreach" in the <a href="https://www.usccb.org/pope-francis-resources-memoriam">USCCB webpage</a>. 
+</div><br><br>
+	
+</main>  
+	<br><br><br><br><br><br>
+	<div class="church-address">
+		36 Lincoln Ave., Jamesburg, NJ | Tel. 732-521-0100
+	</div> 
+	<br><br>
+</body>
+<script> 
+
+
+hamburgerCharacter = "&#9776;"
+crossCharacter = "&#10005;"
+
+		function toggleMenu() {
+			const screen = document.getElementById("screen");
+			const hamburger = document.getElementById("hamburger");
+			
+			screen.classList.toggle("active");
+			hamburger.innerHTML = screen.classList.contains("active")
+				? crossCharacter : hamburgerCharacter;
+			}
+
+</script>
+</html>
+
